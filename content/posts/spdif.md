@@ -41,6 +41,9 @@ format was used in the source bluray (DTS-HD or DTHD). But using 6 FLAC channels
 
 I'm not going to go into much detail here. Just the basic most common setup.
 
+![linux audio schema](/pcm.svg)
+**Audio on Linux using default setup**
+
 The user is playing audio with a media player or any application. The audio file can be in any format so it's usually decompressed before being played.
 Here, decompression means converting from any audio format to PCM. This PCM audio is then sent to PulseAudio that mixes the different audio
 sources and then sends that to ALSA. ALSA then sends the audio through the cables (jack, HDMI, DP, S/PDIF).
@@ -104,6 +107,9 @@ in reality it's the S/PDIF output, the naming is just wrong. Once selected, the 
 
 Then from any audio source it is converted to DTS. Stereo is played as stereo in DTS format, 5.1 is played as real 5.1 also in DTS format. 
 My problem was solved for real.
+
+![linux audio dca schema](/dca.svg)
+**Audio on Linux using dcaenc**
 
 ## Bonus: the idea for the solution
 
