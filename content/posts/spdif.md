@@ -1,7 +1,6 @@
 ---
 title: "Using 5.1 through S/PDIF on Linux"
 date: 2020-10-20T18:07:42+02:00
-draft: true
 ---
 
 Using 5.1 on Linux isn't something very common in the first place. But using it over the S/PDIF is even less common so finding documentation
