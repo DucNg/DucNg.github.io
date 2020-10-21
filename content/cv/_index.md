@@ -3,11 +3,11 @@ title: "Resume"
 date: 2020-10-21T10:13:48+02:00
 ---
 
-# Work experiences
+# Work experience
 
 ### Internship, fullstack developer in ReactJS
 
-**Safran, Magny-les-Hammeaux (91), France, 2020, 6 months**
+**Safran, Magny-les-Hameaux (91), France, 2020, 6 months**
 
 _ReactJS, Javascript, MongoDB_
 
@@ -33,13 +33,13 @@ Fullstack development in Go for an event management web site. Documentation of a
 
 **Office français de l'immigration et de l'intégration (OFII), Paris, France, 2017, 2 months**
 
-__Virtualization, system, ESXi, VMWare, Virtual Box__
+_Virtualization, system, ESXi, VMWare, Virtual Box, Oracle_
 
 System administration of ESXi servers. Software deployment.
 
 # Education
 
-### Master’s in computer science applied to company management (MIAGE)
+### Master’s degree in computer science applied to company management (MIAGE)
 
 **Paris-Saclay (91), France** 
 
@@ -67,4 +67,5 @@ Basics of IT with lots of database and UML modeling.
 
 # Languages
 
-French: native language	English: fluent
+* French: native
+* English: fluent
