@@ -5,6 +5,19 @@ date: 2020-10-21T10:13:48+02:00
 
 # Work experience
 
+### Current position, fullstack developer
+
+**Skello, Paris (75), France, 2021**
+
+_Rails, Vue.js, AWS, PostgreSQL_
+
+Building new version of a high productivity schedule software using Vue.js and Rails.
+Backend reworked and frontend entierly remade from scratch.
+
+Work in an AWS dev ops environment.
+
+Contribution in creation of AWS microservices : KPI, mailing, invoices
+
 ### Internship, fullstack developer in ReactJS
 
 **Safran, Magny-les-Hameaux (91), France, 2020, 6 months**
@@ -41,7 +54,7 @@ System administration of ESXi servers. Software deployment.
 
 ### Master’s degree in computer science applied to company management (MIAGE)
 
-**Paris-Saclay (91), France** 
+**Paris-Saclay (91), France**
 
 **Bachelor 2016-2017, M1 2018-2019, M2 2019-2020, 3 years**
 
