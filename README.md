@@ -12,14 +12,14 @@ Install [Hugo](https://gohugo.io/)
 hugo server
 ```
 
-## Prod
-
-```shell
-hugo build -d docs
-```
-
 ## Update
 
 ```shell
 hugo mod get -u
+```
+
+## Generate date for an article
+
+```shell
+date -Iseconds
 ```
