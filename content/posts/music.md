@@ -4,7 +4,9 @@ date: 2022-11-18T17:22:15+01:00
 ---
 
 Growing up as a kid I mostly listened music through my nice mp3 player:
+
 ![old mp3 player](/mp3.jpg)
+
 It created some kind a habit to store music locally and even after streaming platforms were widely used, having limited 3G on my smartphone I mostly relied on playing music stored locally. Over the years, my library grew quiet significantly and became harder and harder to organize. I could at any moment choose the easy pass to just throw everything away and switch everything to a streaming platform but I felt kind of nostalgic and as a tech enthusiast I couldn't just rely on someone elses platform for my needs. So I choose the hard pass to try a have a nice pipeline to store, organize and "deploy" my music.
 
 # Storing music
@@ -92,7 +94,7 @@ Okay so this is still HTML5 + JavaScript but in much more refine package. I won'
 
 So here is the complex part. Accessing music from network works well and I can already do it via Plex but for my phone, I like to keep things offline. Or at least some. Just in case there is no mobile connectivity somewhere.
 
-My first approach to this problem was just to transfer FLAC files from my pc to my phone. I would swap files on some occasion and I could have a nice subset of my library that I carried around (plus it was lossless). But after having a phone without a sdcard slot, I quickly realized this couldn't last. My library kept growing and I kept wanting to listen to many different things at once on my phone. So I took the big decision: 
+My first approach to this problem was just to transfer FLAC files from my pc to my phone. I would swap files on some occasion and I could have a nice subset of my library that I carried around (plus it was lossless). But after having a phone without a sdcard slot, I quickly realized this couldn't last. My library kept growing and I kept wanting to listen to many different things at once on my phone. So I took the big decision:
 
 >It has to end. I will listen to lossy audio now (at least on my phone).
 
