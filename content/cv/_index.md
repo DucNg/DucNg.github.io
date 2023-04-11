@@ -7,16 +7,18 @@ date: 2020-10-21T10:13:48+02:00
 
 ### Current position, fullstack developer
 
-**Skello, Paris (75), France, 2021**
+**Skello, Paris (75), France, 2021, now**
 
-_Rails, Vue.js, AWS, PostgreSQL_
+_Rails, Vue.js, AWS, PostgreSQL, TypeScript, Serverless_
 
 Building new version of a high productivity schedule software using Vue.js and Rails.
-Backend reworked and frontend entierly remade from scratch.
+Backend reworked and frontend entirely remade from scratch.
 
 Work in an AWS dev ops environment.
 
-Contribution in creation of AWS microservices : KPI, mailing, invoices
+Contribution in creation of AWS serverless microservices in TypeScript.
+
+Redaction of technical specifications.
 
 ### Internship, fullstack developer in ReactJS
 
@@ -24,7 +26,7 @@ Contribution in creation of AWS microservices : KPI, mailing, invoices
 
 _ReactJS, Javascript, MongoDB_
 
-Creation of a data extraction web user interface for flight data. Work in a Big Data environment. JavaScript optimisation on API request and big file download.
+Creation of a data extraction web user interface for flight data. Work in a Big Data environment. JavaScript optimization on API request and big file download.
 
 ### Internship, fullstack developer in Go
 
