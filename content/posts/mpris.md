@@ -1,17 +1,19 @@
 ---
-title: "Creating a MPRIS server in Go"
+title: "Creating a MPRIS service (server) in Go"
 date: 2023-03-22T17:48:47+01:00
 ---
 
 # Why?
 
-The use case of creating a MPRIS server is basically when you're making a music player and want to broadcast metadata to the system. Since I was creating a webradio player in Go, I needed this feature.
+The use case of creating a MPRIS service is basically when you're making a music player and want to broadcast metadata to the system. Since I was creating a webradio player in Go, I needed this feature.
 
-There are a lot of documentation online ([and even lib](https://github.com/leberKleber/go-mpris)) on how to create a MPRIS client to retrieve currently playing metadata but a lot less when it comes to creating an actual server. Since creating a MPRIS server is an absolute pain and is poorly documented I thought I might tell my journey of archiving it using the great godbus library.
+There are a lot of documentation online ([and even lib](https://github.com/leberKleber/go-mpris)) on how to create a MPRIS client to retrieve currently playing metadata but a lot less when it comes to creating an actual service. Since creating a MPRIS service is an absolute pain and is poorly documented I thought I might tell my journey of archiving it using the great godbus library.
 
 # What is MPRIS
 
-MPRIS is a D-Bus interface. That's when we need to explain what's a D-Bus interface. D-Bus is a protocol to communicate data between applications on Linux. It's main usage is on the Linux desktop ecosystem. If you need a comparison; if you wanted your web application to communicate with other services you would use an API and communicate with it using HTTP. On Linux, if you need your desktop applications to communicate with each others, you might use D-Bus. udev is a good example of thing that works using D-Bus; it allows communication with devices (block devices) in userspace.
+MPRIS is a D-Bus interface. That's when we need to explain what's a D-Bus interface. D-Bus is a protocol to communicate data between applications on Linux. It's main usage is on the Linux desktop ecosystem. If you need a comparison; if you wanted your web application to communicate with other services you would use an API and communicate with it using HTTP. On Linux, if you need your desktop applications to communicate with each others, you might use D-Bus. udev is a good example of thing that works using D-Bus; it allows management of devices (block devices) in userspace. It's useful to mount devices without root access or detecting devices hotplugs.
+
+The exact terminology is that we're actually making a D-Bus client that exposes a D-Bus service and in this case, the service is MPRIS. There is only one D-Bus server.
 
 A common use case is also mine, sharing metadata of currently playing song. The music player (Firefox, mpd, mpv, whatever) works as a D-Bus server that exports currently playing song metadata and the desktop environment act as a client that picks up this information to display it in the taskbar for example.
 
@@ -81,22 +83,22 @@ Here is how to implement the simple property "[CanPlay](https://specifications.f
 
 ```go
 var canPlay = prop.Prop{
-  Value: true,
-  Writable: true,
-  Emit: prop.EmitTrue,
-  Callback: nil,
+	Value:    true,
+	Writable: true,
+	Emit:     prop.EmitTrue,
+	Callback: nil,
 }
 
 func main() {
-  // Connect to the session bus
+	// Connect to the session bus
 
-  ins.props, err = prop.Export(
-    conn,
-    "/org/mpris/MediaPlayer2",
-    map[string]map[string]*prop.Prop{
-      "org.mpris.MediaPlayer2": {"CanPlay": &canPlay}
-    }
-  )
+	ins.props, err = prop.Export(
+		conn,
+		"/org/mpris/MediaPlayer2",
+		map[string]map[string]*prop.Prop{
+			"org.mpris.MediaPlayer2": {"CanPlay": &canPlay},
+		},
+	)
 }
 ```
 
