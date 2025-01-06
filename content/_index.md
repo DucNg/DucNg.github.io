@@ -1,9 +1,13 @@
 ---
-date: 2020-10-21T10:01:58+02:00
+date: 2025-01-06T15:58:55+01:00
 ---
 
-I'm a fullstack developer for a SAAS based software company. I work with Rails, Vue.js and TypeScript (serverless) for my daily job but I'm also a Go developer and Linux enthusiast.
+I'm a fullstack developer based in Paris. I work for a french cybersecurity company.
 
-Curious, I want to learn new IT skills and especially in open source software.
+I used to work for a SAAS startup using Rails, Vue.js and TypeScript (serverless) but now,
+I mostly work with Python, Go, still TypeScript, React and Vue.js to build cyber threat intelligence tools.
+The deployment is done in Kubernetes.
 
-This is my personal blog where I talk about IT stuff. Mostly Linux and open source software development.
+I'm passionate about open source and especially Linux.
+
+This is my personal blog where I talk about IT related stuff. Mostly Linux and open source software development.
