@@ -1,9 +1,9 @@
 ---
-title: "Using 5.1 through S/PDIF on Linux"
+title: "Using 5.1 through S/PDIF (toslink) on Linux"
 date: 2020-10-20T18:07:42+02:00
 ---
 
-Using 5.1 on Linux isn't something very common in the first place. But using it over the S/PDIF is even less common so finding documentation
+Using 5.1 on Linux isn't something very common in the first place. But using it over the S/PDIF (toslink) is even less common so finding documentation
 about how to do it is close to impossible. After hours and hours of struggling, I found a working solution so I decided to write an article about it.
 
 ## What is 5.1?
